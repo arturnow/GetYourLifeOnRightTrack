@@ -1,0 +1,18 @@
+﻿@using System.Data.Entity.Core.Metadata.Edm
+@model DetailTaskViewModel
+
+@{
+    ViewBag.Title = "Details for " + Model.Name;
+}
+
+<h2>@ViewBag.Title</h2>
+@Html.DisplayForModel()
+
+@if(Model.EndDateTime == null)
+{
+
+    using (Html.BeginForm("Finish", "Task", new { id = Model.Id }))
+     {
+         <input type="submit" value="Finish" />
+     }
+}

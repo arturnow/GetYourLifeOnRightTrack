@@ -1,0 +1,10 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "title";
+}
+
+<div class="input-area">
+    <h2>You have successfully register with login @ViewBag.Login</h2>
+    Go to main page @Html.ActionLink("Main", "Index", "Home")
+</div>

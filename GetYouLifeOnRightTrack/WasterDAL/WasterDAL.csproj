@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35BE6FD9-26EE-4BA2-8CC0-CE3E90384363}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WasterDAL</RootNamespace>
+    <AssemblyName>WasterDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LocalDywizjonu|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\LocalDywizjonu\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201408070830440_Initial.cs" />
+    <Compile Include="Migrations\201408070830440_Initial.Designer.cs">
+      <DependentUpon>201408070830440_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408070833144_Initial1.cs" />
+    <Compile Include="Migrations\201408070833144_Initial1.Designer.cs">
+      <DependentUpon>201408070833144_Initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408070836403_UpdateIdentity.cs" />
+    <Compile Include="Migrations\201408070836403_UpdateIdentity.Designer.cs">
+      <DependentUpon>201408070836403_UpdateIdentity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408071242009_ExtendGoal.cs" />
+    <Compile Include="Migrations\201408071242009_ExtendGoal.Designer.cs">
+      <DependentUpon>201408071242009_ExtendGoal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408081412174_Extend some entities with auditable.cs" />
+    <Compile Include="Migrations\201408081412174_Extend some entities with auditable.Designer.cs">
+      <DependentUpon>201408081412174_Extend some entities with auditable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408120709370_CascadeInMapping.cs" />
+    <Compile Include="Migrations\201408120709370_CascadeInMapping.Designer.cs">
+      <DependentUpon>201408120709370_CascadeInMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408120738108_UniqueIdentityLogin.cs" />
+    <Compile Include="Migrations\201408120738108_UniqueIdentityLogin.Designer.cs">
+      <DependentUpon>201408120738108_UniqueIdentityLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408120819541_EntitiesConfiguration.cs" />
+    <Compile Include="Migrations\201408120819541_EntitiesConfiguration.Designer.cs">
+      <DependentUpon>201408120819541_EntitiesConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408121435349_DateTimePropertiesRename.cs" />
+    <Compile Include="Migrations\201408121435349_DateTimePropertiesRename.Designer.cs">
+      <DependentUpon>201408121435349_DateTimePropertiesRename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408121437214_customSQL.cs" />
+    <Compile Include="Migrations\201408121437214_customSQL.Designer.cs">
+      <DependentUpon>201408121437214_customSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408150927167_uniquePatternContraint.cs" />
+    <Compile Include="Migrations\201408150927167_uniquePatternContraint.Designer.cs">
+      <DependentUpon>201408150927167_uniquePatternContraint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408171132557_WasteStatistics.cs" />
+    <Compile Include="Migrations\201408171132557_WasteStatistics.Designer.cs">
+      <DependentUpon>201408171132557_WasteStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408201346149_BatchLog.cs" />
+    <Compile Include="Migrations\201408201346149_BatchLog.Designer.cs">
+      <DependentUpon>201408201346149_BatchLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408222216104_SocialNetwork.cs" />
+    <Compile Include="Migrations\201408222216104_SocialNetwork.Designer.cs">
+      <DependentUpon>201408222216104_SocialNetwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408222226333_UserGroups.cs" />
+    <Compile Include="Migrations\201408222226333_UserGroups.Designer.cs">
+      <DependentUpon>201408222226333_UserGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201408231905383_NoSocialProfileRequired.cs" />
+    <Compile Include="Migrations\201408231905383_NoSocialProfileRequired.Designer.cs">
+      <DependentUpon>201408231905383_NoSocialProfileRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\BaseEntity.cs" />
+    <Compile Include="Model\BatchLog.cs" />
+    <Compile Include="Model\Goal.cs" />
+    <Compile Include="Model\Group.cs" />
+    <Compile Include="Model\Identity.cs" />
+    <Compile Include="Model\Message.cs" />
+    <Compile Include="Model\Pattern.cs" />
+    <Compile Include="Model\Period.cs" />
+    <Compile Include="Model\PeriodType.cs" />
+    <Compile Include="Model\ProfileType.cs" />
+    <Compile Include="Model\Relation.cs" />
+    <Compile Include="Model\RelationshipType.cs" />
+    <Compile Include="Model\SocialProfile.cs" />
+    <Compile Include="Model\Task.cs" />
+    <Compile Include="Model\TrackRecord.cs" />
+    <Compile Include="Model\UserInGroup.cs" />
+    <Compile Include="Model\UserInGroupType.cs" />
+    <Compile Include="Model\WasteStatistic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BaseRepositry.cs" />
+    <Compile Include="Repositories\BatchLogRepository.cs" />
+    <Compile Include="Repositories\EFGoalRepository.cs" />
+    <Compile Include="Repositories\EFMessageRepository.cs" />
+    <Compile Include="Repositories\EFPatternRepository.cs" />
+    <Compile Include="Repositories\EFTaskRepositry.cs" />
+    <Compile Include="Repositories\EFTrackRecordRepository.cs" />
+    <Compile Include="Repositories\IBaseRepositry.cs" />
+    <Compile Include="Repositories\IBatchLogRepository.cs" />
+    <Compile Include="Repositories\IdentityRepository.cs" />
+    <Compile Include="Repositories\IGoalRepository.cs" />
+    <Compile Include="Repositories\IIdentityRepository.cs" />
+    <Compile Include="Repositories\ILogger.cs" />
+    <Compile Include="Repositories\IMessageRepository.cs" />
+    <Compile Include="Repositories\IPatternRepository.cs" />
+    <Compile Include="Repositories\IPeriodRepository.cs" />
+    <Compile Include="Repositories\ISocialProfileRepository.cs" />
+    <Compile Include="Repositories\ITaskRepository.cs" />
+    <Compile Include="Repositories\ITrackRecordRepository.cs" />
+    <Compile Include="Repositories\IWasteStatisticRepository.cs" />
+    <Compile Include="Repositories\MessageRepository.cs" />
+    <Compile Include="Repositories\PeriodRepository.cs" />
+    <Compile Include="IUnityOfWork.cs" />
+    <Compile Include="Repositories\WasteStatisticRepository.cs" />
+    <Compile Include="WasteContext.cs" />
+    <Compile Include="WasteInitializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201408070830440_Initial.resx">
+      <DependentUpon>201408070830440_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408070833144_Initial1.resx">
+      <DependentUpon>201408070833144_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408070836403_UpdateIdentity.resx">
+      <DependentUpon>201408070836403_UpdateIdentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408071242009_ExtendGoal.resx">
+      <DependentUpon>201408071242009_ExtendGoal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408081412174_Extend some entities with auditable.resx">
+      <DependentUpon>201408081412174_Extend some entities with auditable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408120709370_CascadeInMapping.resx">
+      <DependentUpon>201408120709370_CascadeInMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408120738108_UniqueIdentityLogin.resx">
+      <DependentUpon>201408120738108_UniqueIdentityLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408120819541_EntitiesConfiguration.resx">
+      <DependentUpon>201408120819541_EntitiesConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408121435349_DateTimePropertiesRename.resx">
+      <DependentUpon>201408121435349_DateTimePropertiesRename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408121437214_customSQL.resx">
+      <DependentUpon>201408121437214_customSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408150927167_uniquePatternContraint.resx">
+      <DependentUpon>201408150927167_uniquePatternContraint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408171132557_WasteStatistics.resx">
+      <DependentUpon>201408171132557_WasteStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408201346149_BatchLog.resx">
+      <DependentUpon>201408201346149_BatchLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408222216104_SocialNetwork.resx">
+      <DependentUpon>201408222216104_SocialNetwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408222226333_UserGroups.resx">
+      <DependentUpon>201408222226333_UserGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201408231905383_NoSocialProfileRequired.resx">
+      <DependentUpon>201408231905383_NoSocialProfileRequired.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

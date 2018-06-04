@@ -1,0 +1,22 @@
+﻿@model WasterWebAPI.Models.PatternModel[]
+
+@{
+    ViewBag.Title = "My Pattern list";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Pattern</td>
+            <td>@item.IsEnabled</td>
+            <td>@item.IsWorking</td>
+            <td>@Html.ActionLink("Details", "Details", new { id = item.Id})</td>
+        </tr>
+    }
+
+
+</table>

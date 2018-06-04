@@ -1,0 +1,55 @@
+﻿<html>
+    <head>
+        <title></title>
+
+        <script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+        <script type="text/javascript" src="../js/definitions.js"></script>
+        <script type="text/javascript" src="../js/popup.js"></script>
+        <link href="../css/popup.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <div id="loadIndicator">
+        <div id="circularG">
+            <div id="circularG_1" class="circularG">
+            </div>
+            <div id="circularG_2" class="circularG">
+            </div>
+            <div id="circularG_3" class="circularG">
+            </div>
+            <div id="circularG_4" class="circularG">
+            </div>
+            <div id="circularG_5" class="circularG">
+            </div>
+            <div id="circularG_6" class="circularG">
+            </div>
+            <div id="circularG_7" class="circularG">
+            </div>
+            <div id="circularG_8" class="circularG">
+            </div>
+        </div>
+    </div>
+    <h1>Waster!!!</h1>
+    <div id="divUserInfo">
+    </div>
+    <div id="divLoginPanel">
+        User name:
+        <input id="username" type="text" />
+        Password:
+        <input id="password" type="password" /><input id="btnLogin" type="button" value="Login" />
+    </div>
+    <div id="divControlPanel">
+        <input id="btnAddDomain" type="button" value="Add current page" disabled="disabled" />
+        <input id="btnRemoveDomain" type="button" value="Remove current page" />
+        <input id="btnStopRecording" type="button" value="Stop current recording" />
+        <input id="btnCancelRecording" type="button" value="Cancel current recording" />
+        <input id="btnList" type="button" value="Get domain list" />
+        <div id="wasterList">
+            <ul id="domains"></ul>
+        </div>
+        <div id="divTime" class="hidden">
+            Total time in seconds: <span id="spanTime"></span> and total entry <span id="spanCount"></span>  
+        </div>
+        <input id="btnMessageTest" type="button" value="Test"/>
+    </div>
+</body>
+</html>

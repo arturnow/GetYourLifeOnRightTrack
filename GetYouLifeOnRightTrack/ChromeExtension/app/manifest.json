@@ -1,0 +1,56 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "Time Waster Detector",
+  "version": "0.3.9.0",
+
+  // Recommended
+ // "default_locale": "en",
+  "description": "Don't waste your time",
+
+
+  // Pick one (or none)
+  "browser_action": {
+	 "default_icon" : "img/icon.png",
+	"default_title" : "That's the tool tip",
+	"default_popup" : "html/popup.html"	
+  },
+  /*
+  "page_action": {
+	"default_icon": {
+        "19": "images/icon19.png",
+        "38": "images/icon38.png"
+		},
+    "default_title": "Google Mail"
+   // "default_popup": "popup.html"
+	},
+	*/
+  // Optional
+  "author": "Artur Nowocin Enterprise IT Solutions",
+  "background": {
+    // Recommended
+	"scripts" : [ "js/jquery-2.1.1.js", "js/definitions.js", "js/background.js", "js/extension_handlers.js", "js/server_handlers.js"],	
+    "persistent": true //Use event pages not persistent background
+  },
+  "content_scripts" : [
+  {
+	"matches": ["*://*/*"],
+	"css": ["css/content.css", "css/jquery-ui.css"],
+	"js" : ["js/jquery-2.1.1.js", "js/jquery-ui.js" , "js/content.js"]
+	}
+  ],
+  
+  "permissions" : [
+  "tabs" , "activeTab" , "storage",  "alarms", "notifications" ,"http://*.google.com/" , "idle"
+  ],
+   "web_accessible_resources": [
+    "/img/goal.jpg" , "/img/1408041629_Delete.png"
+  ]
+  /*,
+  "chrome_ui_overrides": {
+    "bookmarks_ui": {
+      "remove_bookmark_shortcut": true,
+      "remove_button": true
+    }
+  }*/
+}

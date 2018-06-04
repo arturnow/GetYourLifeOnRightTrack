@@ -1,0 +1,37 @@
+﻿h3 {
+    margin: 0px;
+}
+.on-the-right-track-message-container {    
+    top: 200px;
+    right: 200px;
+    background: black;
+    width: 300px;
+    position: fixed;
+}
+
+div.wasterLog {
+    background: #e10000;
+    background: rgba(53, 44, 44, 0.8);
+    width: 300px;
+    height: 100px;
+    overflow-y : auto;
+}
+
+#message_content img{
+    float: left;
+}
+
+.on-the-right-track-message-header{
+    padding : 4px;
+    height: 24px;
+    color : white;
+}
+
+.on-the-right-track-message-close,
+.on-the-right-track-message-main-close{
+    float: right;
+    height : 24px;
+    width : 24px;
+    cursor: pointer;
+    content: url(chrome-extension://eapappokghikncakfbealjigppbgncem/img/1408041629_Delete.png)
+}

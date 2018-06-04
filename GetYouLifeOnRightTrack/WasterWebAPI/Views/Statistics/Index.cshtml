@@ -1,0 +1,72 @@
+﻿@using WasterDAL.Model
+@model IEnumerable<WasterDAL.Model.WasteStatistic>
+
+@{
+    ViewBag.Title = "Your current month stats";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Start
+            </th>
+            <th>End
+            </th>
+            <th>Total time
+            </th>
+            <th>Entry count
+            </th>
+            <th>Typ
+            </th>
+        </tr>
+    </thead>
+    @foreach (var record in Model)
+    {
+        <tr>
+            <td>
+                @record.Period.StartDate.ToShortDateString()
+            </td>
+            <td>
+                @record.Period.EndDate.ToShortDateString()
+            </td>
+            <td>
+                @{
+        var timeSpan = TimeSpan.FromSeconds(record.TimeSumInSecond);
+                }
+                @timeSpan.ToString("c")
+            </td>
+            <td>
+                @record.EntryCount
+            </td>
+            <td>
+                @record.Period.Type.ToString()
+            </td>
+        </tr>
+        
+    }
+</table>
+
+
+<div>
+    Week Summary
+    @{
+        WasteStatistic week = ((WasteStatistic)ViewBag.WeekSummary);
+
+        var weekTimeSpan = TimeSpan.FromSeconds(week.TimeSumInSecond);
+    }
+
+    @string.Format("{0:%h} hours {0:%m} minutes i {0:%s} seconds", weekTimeSpan)
+
+</div>
+<div>
+    Month Summary
+    @{
+        WasteStatistic month = ((WasteStatistic)ViewBag.MonthSummary);
+        var monthTimeSpan = TimeSpan.FromSeconds(month.TimeSumInSecond);
+    }
+
+    @string.Format("{0:%h} hours {0:%m} minutes i {0:%s} seconds", monthTimeSpan)
+
+</div>

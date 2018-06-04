@@ -1,0 +1,18 @@
+﻿@model EditGoalViewModel
+
+@{
+    ViewBag.Title = string.Format("Edit goal \"{0}\"", Model.Name);
+}
+
+<h2>@ViewBag.Title</h2>
+
+@Html.ValidationSummary(true)
+
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+
+    <input type="submit" value="Edit"/>
+}
+
+

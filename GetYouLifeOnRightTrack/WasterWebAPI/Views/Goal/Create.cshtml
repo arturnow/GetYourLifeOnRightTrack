@@ -1,0 +1,17 @@
+﻿@model CreateGoalViewModel
+
+@{
+    ViewBag.Title = "Create a new goal!";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@Html.ValidationSummary(true)
+
+@using(Html.BeginForm()){
+
+@Html.EditorForModel()
+
+    <input type="submit" value="Save"/>
+
+}

@@ -1,0 +1,38 @@
+﻿<div id="body">
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>Get on the RIGHT track - TOGETHER</h1>
+                <h2>Collaboration app!</h2>
+            </hgroup>
+            <p>
+                This app will let you achieve your goals!
+            </p>
+            <p>
+                Just download the Chrome Extension and stop achieving your dreams
+                @if(Request.IsAuthenticated)
+                {
+                    Html.ActionLink("Register", "Register", "Account");
+                }
+            </p>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        <h3>Just 3 simple steps:</h3>
+        <ol class="round">
+            <li class="one">
+                <h5>Get the app from Chrome Web Store</h5>
+                Install it and set up!
+            </li>
+
+            <li class="two">
+                <h5>Add Wasters to your list</h5>
+                Just one click!
+            </li>
+            <li class="three">
+                <h5>Enjoy</h5>
+                Time off wasting
+            </li>
+        </ol>
+    </section>
+</div>

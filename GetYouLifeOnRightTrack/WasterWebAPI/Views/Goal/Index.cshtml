@@ -1,0 +1,60 @@
+﻿@model IEnumerable<GoalListItem>
+
+@{
+    ViewBag.Title = "Your goals";
+}
+
+<title>@ViewBag.Title</title>
+
+
+@if (TempData.ContainsKey("message"))
+{
+    @TempData["message"]
+}
+
+<table>
+    <thead>
+        <th>Name   
+        </th>
+        <th>Category
+        </th>
+        <th>Progress
+        </th>
+        <th>Due date
+        </th>
+        <th></th>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+@*  @Html.Partial("DisplayTemplates/GoalListItem", item)*@
+            
+            <tr>
+                <td>
+                    @Html.ActionLink(item.Name, "Details", new { id = item.Id })
+
+                </td>
+                <td>
+                    @item.Category
+
+                </td>
+                <td>
+                    @item.Progress
+                </td>
+                <td>
+                    @item.DueDateTime.ToShortDateString()
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    @Html.ActionLink("Tasks", "Index", "Task", new { goalid = item.Id }, null)
+                </td>
+            </tr>
+        }
+
+    </tbody>
+    <tfoot>
+    </tfoot>
+</table>
+
+@Html.ActionLink("Add", "Create")

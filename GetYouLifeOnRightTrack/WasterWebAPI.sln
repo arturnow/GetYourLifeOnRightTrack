@@ -1,0 +1,111 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasterWebAPI", "WasterWebAPI\WasterWebAPI.csproj", "{867C3B83-7CB3-4002-84B0-25A6CEB91A9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasterWebAPI.Tests", "WasterWebAPI.Tests\WasterWebAPI.Tests.csproj", "{0F16FDD7-F0E7-4B8B-A9CE-127D0E9583C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChromeExtension", "ChromeExtension\ChromeExtension.csproj", "{94834129-D624-4531-88F4-BF4DA2A1CF3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasterDAL", "WasterDAL\WasterDAL.csproj", "{35BE6FD9-26EE-4BA2-8CC0-CE3E90384363}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasteBatchConsole", "WasteBatchConsole\WasteBatchConsole.csproj", "{2CB5F59B-8134-4894-AB93-AF984892FAC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasteBatchTests", "WasteBatchTests\WasteBatchTests.csproj", "{1884556D-8417-48B7-A875-1D315EA6810B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasterLOB", "WasterLOB\WasterLOB.csproj", "{9BF53BD5-B976-47E8-A61B-99C250D331A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{7799F658-E48A-44AB-B2EE-B3121D844C91}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://arturnowocin.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WasterWebAPI.Tests\\WasterWebAPI.Tests.csproj
+		SccProjectName1 = WasterWebAPI.Tests
+		SccLocalPath1 = WasterWebAPI.Tests
+		SccProjectUniqueName2 = WasterWebAPI\\WasterWebAPI.csproj
+		SccProjectName2 = WasterWebAPI
+		SccLocalPath2 = WasterWebAPI
+		SccProjectUniqueName3 = ChromeExtension\\ChromeExtension.csproj
+		SccProjectName3 = ChromeExtension
+		SccLocalPath3 = ChromeExtension
+		SccProjectUniqueName4 = WasterDAL\\WasterDAL.csproj
+		SccProjectName4 = WasterDAL
+		SccLocalPath4 = WasterDAL
+		SccProjectUniqueName5 = WasteBatchConsole\\WasteBatchConsole.csproj
+		SccProjectName5 = WasteBatchConsole
+		SccLocalPath5 = WasteBatchConsole
+		SccProjectUniqueName6 = WasteBatchTests\\WasteBatchTests.csproj
+		SccProjectName6 = WasteBatchTests
+		SccLocalPath6 = WasteBatchTests
+		SccProjectUniqueName7 = WasterLOB\\WasterLOB.csproj
+		SccProjectName7 = WasterLOB
+		SccLocalPath7 = WasterLOB
+		SccProjectUniqueName8 = Common\\Common.csproj
+		SccProjectName8 = Common
+		SccLocalPath8 = Common
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		LocalDywizjonu|Any CPU = LocalDywizjonu|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{867C3B83-7CB3-4002-84B0-25A6CEB91A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{867C3B83-7CB3-4002-84B0-25A6CEB91A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{867C3B83-7CB3-4002-84B0-25A6CEB91A9D}.LocalDywizjonu|Any CPU.ActiveCfg = LocalDywizjonu|Any CPU
+		{867C3B83-7CB3-4002-84B0-25A6CEB91A9D}.LocalDywizjonu|Any CPU.Build.0 = LocalDywizjonu|Any CPU
+		{867C3B83-7CB3-4002-84B0-25A6CEB91A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{867C3B83-7CB3-4002-84B0-25A6CEB91A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F16FDD7-F0E7-4B8B-A9CE-127D0E9583C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F16FDD7-F0E7-4B8B-A9CE-127D0E9583C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F16FDD7-F0E7-4B8B-A9CE-127D0E9583C1}.LocalDywizjonu|Any CPU.ActiveCfg = LocalDywizjonu|Any CPU
+		{0F16FDD7-F0E7-4B8B-A9CE-127D0E9583C1}.LocalDywizjonu|Any CPU.Build.0 = LocalDywizjonu|Any CPU
+		{0F16FDD7-F0E7-4B8B-A9CE-127D0E9583C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F16FDD7-F0E7-4B8B-A9CE-127D0E9583C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94834129-D624-4531-88F4-BF4DA2A1CF3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94834129-D624-4531-88F4-BF4DA2A1CF3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94834129-D624-4531-88F4-BF4DA2A1CF3D}.LocalDywizjonu|Any CPU.ActiveCfg = LocalDywizjonu|Any CPU
+		{94834129-D624-4531-88F4-BF4DA2A1CF3D}.LocalDywizjonu|Any CPU.Build.0 = LocalDywizjonu|Any CPU
+		{94834129-D624-4531-88F4-BF4DA2A1CF3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94834129-D624-4531-88F4-BF4DA2A1CF3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35BE6FD9-26EE-4BA2-8CC0-CE3E90384363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35BE6FD9-26EE-4BA2-8CC0-CE3E90384363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35BE6FD9-26EE-4BA2-8CC0-CE3E90384363}.LocalDywizjonu|Any CPU.ActiveCfg = LocalDywizjonu|Any CPU
+		{35BE6FD9-26EE-4BA2-8CC0-CE3E90384363}.LocalDywizjonu|Any CPU.Build.0 = LocalDywizjonu|Any CPU
+		{35BE6FD9-26EE-4BA2-8CC0-CE3E90384363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35BE6FD9-26EE-4BA2-8CC0-CE3E90384363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CB5F59B-8134-4894-AB93-AF984892FAC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB5F59B-8134-4894-AB93-AF984892FAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB5F59B-8134-4894-AB93-AF984892FAC2}.LocalDywizjonu|Any CPU.ActiveCfg = LocalDywizjonu|Any CPU
+		{2CB5F59B-8134-4894-AB93-AF984892FAC2}.LocalDywizjonu|Any CPU.Build.0 = LocalDywizjonu|Any CPU
+		{2CB5F59B-8134-4894-AB93-AF984892FAC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB5F59B-8134-4894-AB93-AF984892FAC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1884556D-8417-48B7-A875-1D315EA6810B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1884556D-8417-48B7-A875-1D315EA6810B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1884556D-8417-48B7-A875-1D315EA6810B}.LocalDywizjonu|Any CPU.ActiveCfg = LocalDywizjonu|Any CPU
+		{1884556D-8417-48B7-A875-1D315EA6810B}.LocalDywizjonu|Any CPU.Build.0 = LocalDywizjonu|Any CPU
+		{1884556D-8417-48B7-A875-1D315EA6810B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1884556D-8417-48B7-A875-1D315EA6810B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BF53BD5-B976-47E8-A61B-99C250D331A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF53BD5-B976-47E8-A61B-99C250D331A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF53BD5-B976-47E8-A61B-99C250D331A4}.LocalDywizjonu|Any CPU.ActiveCfg = LocalDywizjonu|Any CPU
+		{9BF53BD5-B976-47E8-A61B-99C250D331A4}.LocalDywizjonu|Any CPU.Build.0 = LocalDywizjonu|Any CPU
+		{9BF53BD5-B976-47E8-A61B-99C250D331A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF53BD5-B976-47E8-A61B-99C250D331A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7799F658-E48A-44AB-B2EE-B3121D844C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7799F658-E48A-44AB-B2EE-B3121D844C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7799F658-E48A-44AB-B2EE-B3121D844C91}.LocalDywizjonu|Any CPU.ActiveCfg = LocalDywizjonu|Any CPU
+		{7799F658-E48A-44AB-B2EE-B3121D844C91}.LocalDywizjonu|Any CPU.Build.0 = LocalDywizjonu|Any CPU
+		{7799F658-E48A-44AB-B2EE-B3121D844C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7799F658-E48A-44AB-B2EE-B3121D844C91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+﻿@using Recaptcha
+@model RegisterModel
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title</h1>
+    <h2>Create a new account.</h2>
+</hgroup>
+
+@Html.ValidationSummary(true)
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.EditorForModel()
+    
+    
+    @Html.Raw(@Html.GenerateCaptcha("onthetrackrecaptcha", "clean", "", null));
+    
+    
+    <input type="submit" value="Register" />
+    @*
+    @Html.ActionLink("Main", "Index", "Home")*@
+}
+

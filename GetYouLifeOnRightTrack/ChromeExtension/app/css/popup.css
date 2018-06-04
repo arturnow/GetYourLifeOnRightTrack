@@ -1,0 +1,109 @@
+﻿body {
+    width: 250px;
+    margin: 0px;
+}
+
+div#wasterList {
+    max-height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+div#divControlPanel, div#divControlPanel {
+    display: none;
+}
+
+div#loadIndicator {
+    background: rgba(24, 24, 24, 0.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* visibility: hidden; */
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/*Spinner*/
+#circularG {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.circularG {
+    position: absolute;
+    background-color: #0094D4;
+    width: 29px;
+    height: 29px;
+    -webkit-border-radius: 19px;
+    -webkit-animation-name: bounce_circularG;
+    -webkit-animation-duration: 2.64s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: linear;
+}
+
+#circularG_1 {
+    left: 0;
+    top: 50px;
+    -webkit-animation-delay: 0.99s;
+}
+
+#circularG_2 {
+    left: 14px;
+    top: 14px;
+    -webkit-animation-delay: 1.32s;
+}
+
+#circularG_3 {
+    top: 0;
+    left: 50px;
+    -webkit-animation-delay: 1.65s;
+}
+
+#circularG_4 {
+    right: 14px;
+    top: 14px;
+    -webkit-animation-delay: 1.98s;
+}
+
+#circularG_5 {
+    right: 0;
+    top: 50px;
+    -webkit-animation-delay: 2.31s;
+}
+
+#circularG_6 {
+    right: 14px;
+    bottom: 14px;
+    -webkit-animation-delay: 2.64s;
+}
+
+#circularG_7 {
+    left: 50px;
+    bottom: 0;
+    -webkit-animation-delay: 2.97s;
+}
+
+#circularG_8 {
+    left: 14px;
+    bottom: 14px;
+    -webkit-animation-delay: 3.3s;
+}
+
+@-webkit-keyframes bounce_circularG {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(.3);
+    }
+}

@@ -1,0 +1,39 @@
+﻿@using System.Threading.Tasks
+@using WasterWebAPI.Controllers
+@model IEnumerable<TaskViewItem>
+
+@{
+    ViewBag.Title = "Task main page";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+@foreach (TaskViewItem item in Model)
+{
+
+    <div class="task-container">
+
+        @Html.Label("Title", item.Name)
+
+        @if (item.EndDateTime == null)
+        {
+            using (Html.BeginForm("Finish", "Task", FormMethod.Post, new { id = item.Id }))
+            {
+            <input type="submit" value="Finish" title="Tytuł" />    
+            }
+        }
+        else
+        {
+            @:Finished @(item.EndDateTime ?? DateTime.Now)
+        }
+        <br />
+        @Html.ActionLink("Details", "Details", new { id = item.Id })
+    </div>
+}
+
+<div class="clear-fix"></div>
+
+@Html.ActionLink("Add", "Create", new { goalid = ViewBag.GoalId })
+
+
